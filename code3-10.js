@@ -1,6 +1,6 @@
 let input = 2;
 
-switch(input & 2)
+switch(input % 2)
 {
     case 0:
         console.log("짝수입니다");
