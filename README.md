@@ -5,6 +5,39 @@
 
 >배운 내용 
 
+>좀더 나아가기
+
+node.js에서 입력을 받기 위해서는 굉장히 어렵다.
+웹 브라우저에서 사용되는 자바 스크립트에서는 prompt에서 값을 받아오면 되지만
+node.js에 사상 때문에 받아오기가 힘들다
+그렇기에 받아오기 위해서는 이러한 코드를 짜야한다
+
+```js
+const repl = require('repl');
+
+repl.start({
+    prompt: "숫자입력 :" ,
+    eval: (command, context, filename, callback) => {
+    let number = Number(command);
+    if(isNaN(number)) {
+        console.log("숫자가 아닙니다");
+    }
+    else{
+        console.log("숫자입니다")
+    }
+    callback();
+}
+})
+```
+
+>짧은 초기호 문
+
+|| 연산자가 불이 아닌 자료에 사용 된다면 
+2가지 특성을 가진다
+A||B 에서 A가 참이라면 A로 대치됨
+A||B 에서 A가 참이라면 B로 대치됨
+나중에 추가
+
 >삼항 연산자
 
 프로그램의 진행에 따라 변화시킬수 있다
