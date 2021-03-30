@@ -5,6 +5,24 @@
 
 >배운 내용 
 
+>for in 과 for of 반복문
+
+객체에 쉽게 반복문을 적용할 때 사용한다
+
+```JS
+    let array = [1,2,3,4,5]
+
+    for(let i in array)
+    {
+        console.log('$(i)번째 요소: $(array[i]');
+    }
+
+    for(let item of array)
+    {
+        console.log(item);
+    }
+```
+
 >for문
 
 for문은 초기식과 조건식을 비교하여 반복하는 반복문임  
