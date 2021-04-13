@@ -75,5 +75,42 @@ function gaussum(min,max)
 
 console.log(gaussum(1,100));
 
+//함수 매개 변수 초기화
+function dolog(name,count){
+    console.log(`${name}(이)가 ${count}개 남았습니다`);
+}
+dolog("사과",3);
+dolog("사과");
 
 
+//함수 매개 변수 초기화
+function dologver2(name,count){
+    if(!count){
+        count = 1;
+    }
+    console.log(`${name}(이)가 ${count}개 남았습니다`);
+}
+dologver2("사과",3);
+dologver2("사과");
+
+function dologver3(name,count){
+    if(!count){
+        console.log("죄송하지만 갯수가 입력이 안됬습니다. 다시 입력해주세요.");
+        return 0;
+    }
+    console.log(`${name}(이)가 ${count}개 남았습니다`);
+}
+dologver3("사과",3);
+dologver3("사과");
+
+console.log("sdfsdf");
+
+function dologver4(name="무명",count=1){
+    if(!count){
+        count = 1;
+    }
+    console.log(`${name}(이)가 ${count}개 남았습니다`);
+}
+dologver4("사과",3);
+dologver4("사과");
+dologver4();
