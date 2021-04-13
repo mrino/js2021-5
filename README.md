@@ -1,8 +1,10 @@
 # 신동주 202030420 
 
 >git 관련 명령어 
-git commit -am [설명]: 저장과 동시에 커밋을 한다
-git push: 푸쉬한다.
+git init: git을 생성한다.  
+git commit -am [설명]: 저장과 동시에 커밋을 한다  
+git push: 푸쉬한다.  
+
 
 * * *
 
