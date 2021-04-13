@@ -114,3 +114,19 @@ function dologver4(name="무명",count=1){
 dologver4("사과",3);
 dologver4("사과");
 dologver4();
+
+
+// 콜백함수
+
+function CallTenTimes(callback)
+{
+    for(let i = 0; i<10; i++)
+    {
+        callback();
+    }
+}
+
+CallTenTimes(function ()
+{
+    console.log("함수호출중");
+});
