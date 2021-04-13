@@ -30,9 +30,8 @@ let fun3 = function(){
 fun3();
 console.log(fun3);
 
-let foo;
-
 function power(x){
+    let foo;
     foo = x * x;
     return foo;
 }
