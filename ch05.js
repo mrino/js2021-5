@@ -145,3 +145,11 @@ console.log(parseFloat(inputB));
 //a문자열 뒤에 숫자가 아닌 문자가 포함되어 있을 때
 console.log(parseInt(inputC));
 
+console.log(Number(inputA));
+console.log(Number(inputB));
+console.log(Number(inputC));
+//10진수가 아닌 다른 진수로 변환하고 싶을 때 
+console.log(parseInt("1010101",2));
+console.log(parseInt("1010101",8));
+console.log(parseInt("1010101",16));
+
