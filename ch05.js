@@ -38,3 +38,15 @@ function power(x){
 
 console.log(power(10));
 console.log(power(1000));
+
+
+
+function multply(x,y){
+    let foo;
+    foo = x * y;
+    return foo;
+}
+
+console.log(multply(3,4));
+
+
