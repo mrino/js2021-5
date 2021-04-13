@@ -130,3 +130,18 @@ CallTenTimes(function ()
 {
     console.log("함수호출중");
 });
+
+let inputA = "52";
+let inputB = "2342.234";
+let inputC = "1401동";
+
+//기본적인 parseInt 함수 사용법
+console.log(parseInt(inputA));
+
+//paseInt 함수와 parseFloat 함수의 차이
+console.log(parseInt(inputB));
+console.log(parseFloat(inputB));
+
+//a문자열 뒤에 숫자가 아닌 문자가 포함되어 있을 때
+console.log(parseInt(inputC));
+
