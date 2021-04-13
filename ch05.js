@@ -16,3 +16,9 @@ function fun1(){
 fun1();
 
 console.log(fun1);
+
+// code 5-3
+
+let fun2 = () => console.log("하하하")
+
+fun2();
