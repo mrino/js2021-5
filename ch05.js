@@ -48,5 +48,6 @@ function multply(x,y){
 }
 
 console.log(multply(3,4));
+console.log(multply(4,2));
 
 
