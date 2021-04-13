@@ -14,7 +14,7 @@ function <함수 이름>(매개 변수)
 }
 ```
 다만 함수의 종류의 따라 리턴은 해도 되고 안해도 된다.  
-<img src="캡쳐.PNG" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="RubberDuck"></img><br/>
+<img src="https://github.com/mrino/js2021-5/blob/master/%EC%BA%A1%EC%B2%98.PNG" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="RubberDuck"></img><br/>
 
 >화살표 함수
 
