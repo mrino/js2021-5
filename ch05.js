@@ -20,5 +20,22 @@ console.log(fun1);
 // code 5-3
 
 let fun2 = () => console.log("하하하")
-
 fun2();
+console.log(fun2);
+
+let fun3 = function(){
+    console.log("첫번째 줄");
+    console.log("두번째 줄");
+}
+fun3();
+console.log(fun3);
+
+let foo;
+
+function power(x){
+    foo = x * x;
+    return foo;
+}
+
+console.log(power(10));
+console.log(power(1000));
