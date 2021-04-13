@@ -153,3 +153,13 @@ console.log(parseInt("1010101",2));
 console.log(parseInt("1010101",8));
 console.log(parseInt("1010101",16));
 
+
+setTimeout(()=>{
+    console.log("1초 경과");
+},1000);
+
+let bar = 0;
+setInterval(()=>{
+    console.log(`${bar}밀리초 경과`)
+    bar++;
+},1);
