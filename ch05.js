@@ -1,3 +1,4 @@
+/*
 // code 5-1
 let fun = function(){
     console.log("첫번째 줄");
@@ -154,12 +155,50 @@ console.log(parseInt("1010101",8));
 console.log(parseInt("1010101",16));
 
 
-setTimeout(()=>{
-    console.log("1초 경과");
-},1000);
+// setTimeout(()=>{
+//     console.log("1초 경과");
+// },1000);
 
-let bar = 0;
-setInterval(()=>{
-    console.log(`${bar}밀리초 경과`)
-    bar++;
-},1);
+// let bar = 0;
+
+// setInterval(()=>{
+//     console.log(`${bar}밀리초 경과`)
+//     bar++;
+// },1);
+여기가 위에 주석 주는거임
+*/
+
+// let bar = setInterval(() => {
+//     console.log("1초 경과");
+// }, 1000);
+
+// setTimeout(() => {
+//     clearInterval(bar);
+// },3000)
+
+
+// let foo;
+
+// foo = 10;
+// foo = 20;
+// foo = 30;
+
+// console.log(foo);
+
+// let foo;
+
+// foo =() => {console.log("1st");}
+// foo =() => {console.log("2nd");}
+// foo =() => {console.log("3rd");}
+
+// foo();
+
+foo =() => {
+    console.log("1st");
+}
+
+function foo (){
+    console.log("2nd");
+}
+
+foo();

@@ -13,6 +13,66 @@ git push: 푸쉬한다.
 
 >배운 내용 
 
+>변수의 대하여
+
+변수는 메모리에 값을 저장하는데 선언된 순서되로 값이 덮어지므로  
+```js
+let foo;
+
+foo = 10;
+foo = 20;
+foo = 30;
+
+console.log(foo);
+```
+위에 값은 30이 출력된다.  
+
+무명함수 또한 
+```js
+let foo;
+
+foo =() => {console.log("1st");}
+foo =() => {console.log("2nd");}
+foo =() => {console.log("3rd");}
+
+foo();
+```
+마지막에 선언된 3rd가 출력되지만  
+
+유명함수 같은 경우
+```js
+
+foo =() => {
+    console.log("1st");
+}
+
+function foo (){
+    console.log("2nd");
+}
+
+foo();
+```
+유명함수가 먼저 실행됨으로 
+1st가 출력되게 된다.  
+
+>clearInterval
+
+setInterval의 무한 루프를 탈출시켜준다.  
+```js
+let bar = setInterval(() => {
+    console.log("1초 경과");
+}, 1000);
+
+setTimeout(() => {
+    clearInterval(bar);
+}, 3000)
+```
+
+
+## [04월 13일]
+
+>배운 내용 
+
 >타이머 함수
 
 '특정 시간 후'에 또는 '특정 시간 마다'어떤 일을 할 때 사용한다.  
