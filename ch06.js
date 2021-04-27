@@ -16,20 +16,29 @@
 //     }
 // }
 
-// foo.print();
+// // foo.print();
 
-let products = [
-    {name: "사과", price: 1200},
-    {name: "배", price: 1500},
-    {name: "바나나", price: 1000},
-    {name: "딸기", price: 2000},
-];
+// let products = [
+//     {name: "사과", price: 1200},
+//     {name: "배", price: 1500},
+//     {name: "바나나", price: 1000},
+//     {name: "딸기", price: 2000},
+// ];
 
-function printProdcut(bar) {
-    console.log(`${bar.name} - ${bar.price}`);    
+// function printProdcut(bar) {
+//     console.log(`${bar.name} - ${bar.price}`);    
+// }
+
+// for(let foo of products)
+// {
+//     printProdcut(foo);
+// }
+
+function Product(name, price) {
+    this.name = name;
+    this.price = price;   
 }
 
-for(let foo of products)
-{
-    printProdcut(foo);
-}
+let product = new Product("호에엥",1200);
+
+console.log(product);
