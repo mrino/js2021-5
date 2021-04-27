@@ -193,12 +193,21 @@ console.log(parseInt("1010101",16));
 
 // foo();
 
-foo =() => {
-    console.log("1st");
-}
+// foo =() => {
+//     console.log("1st");
+// }
 
-function foo (){
-    console.log("2nd");
+// function foo (){
+//     console.log("2nd");
+// }
+
+// foo();
+
+let name = "ju"
+
+foo = () => {
+    let name = "ehdwn";
+    console.log(this.name);
 }
 
 foo();

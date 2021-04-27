@@ -9,9 +9,72 @@ git push: 푸쉬한다.
 >>노드가 없으면 그냥 html에서 실행하면 된다.
 * * *
 
-## [04월 13일]
+## [04월 27일]
 
->배운 내용 
+>배운 내용  
+
+>객체 배열
+
+배열과 객체를 사용하면 여러개의 데이터를 쉽게 사용할 수 있음
+```js
+let product = [
+    {name: "사과", price: 1200},
+    {name: "배", price: 1500},
+    {name: "바나나", price: 1000},
+    {name: "딸기", price: 2000},
+];
+```
+
+>속성과 메서드
+
+요소: 배열 내부에 있는 값  
+속성: 객체 내부에 있는 값  
+메소드: 객체 내부의 있는 함수
+
+```js
+let foo = {
+    name: "건조 망고",
+    price: 1200,
+    print: function () {
+        console.log(`${this.name} - ${this.price}`);
+    }
+}
+
+foo.print();
+```
+name: "건조 망고"가 요소  
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"건조 망고"가 객체  
+print 부분이 메소드 부분  
+실행시키는 건 변수.메소드(); 하면 실행할 수 있다.   
+그리고 또한 무명함수를 사용하면 this가 작동하지 않아 사용할 수 없다.  
+그리고 또한 this가 생략될 수 없다. 
+
+>JSON (객체 선언)
+
+JSON: Javascript 객체 문법으로 구조화된 데이터를 표현하기 위한 문자 기반의 표준 포맷  
+작은 데이터를 보관하기 다른 언어에서도 자주 사용한다.
+
+사용법은
+```js
+let foo = {
+    key: keycode,
+    key1: "codode",
+    key12: "codo33de"
+}
+
+console.log(foo);
+console.log(foo.key);
+```
+키: 속성 값 이런 식으로 사용한다.
+
+
+* * *
+### 5장 끝!
+
+>this
+
+이해 못함  
+나중에 책 보고 다시 적기
 
 >변수의 대하여
 
@@ -52,7 +115,7 @@ function foo (){
 
 foo();
 ```
-유명함수가 먼저 실행됨으로 
+자바 스크립트에서 유명함수가 먼저 실행됨으로 
 1st가 출력되게 된다.  
 
 >clearInterval
