@@ -324,7 +324,7 @@ console.log(out);
 
     for(let i in array)
     {
-        console.log('$(i)번째 요소: $(array[i]');
+        console.log(`${i}번째 요소: ${array[i]}`);
     }
 
     for(let item of array)
