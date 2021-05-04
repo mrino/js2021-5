@@ -1,5 +1,7 @@
 # 신동주 202030420 
 
+><a herf="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects#%EA%B0%92_%EC%86%8D%EC%84%B1">모질라</a> 참고하면 좋은 곳
+
 >git 관련 명령어 
 >>git init: git을 생성한다.  
 git commit -am [설명]: 저장과 동시에 커밋을 한다  
@@ -13,6 +15,54 @@ git push: 푸쉬한다.
 
 >배운 내용  
 
+>기본 자료형과 객체 자료형 차이
+
+숫자, 문자, 불을 기본 자료형 이라고 이야기한다.
+Number, Stirng, Boolen 생성자 함수로 생성하면 객체가 된다.  
+
+기본 자료형과 객체 자료형에 차이는  
+기본 자료형은 객체가 아니므로 속성과 메소드를 추가할 수 없다는 것이다
+
+그러면 기본 자료형에 속성 또는 메소드를 추가할 수 없냐는 질문에는 아니다 라고 대답할 수 있다.  
+프로토타입으로 일회용 옷 자체로 바꾸면 된다.
+
+이와 관련된 내용은 ch07.js에서 확인바람
+
+* * *
+### 6장 끝!
+
+>null값과 자료형
+
+0, NaN, ""[빈 문자열]은 false로 변환될 뿐 실제로는 값이 들어가있다고 할 수 있다.  
+아예 없는 상태를 표현하기 위하여 null을 이용한다.
+
+>프로토타입
+
+생성자함수로 만든 객체는 프로토타임 공간에 메소드를 지정해서 모든 객체가 공유하도록 한다. 해당 함수는 생성자 함수로 사용했을 때만 의미가 생긴다 
+```js
+function Product(name, price) {
+    this.name = name;
+    this.price = price;
+}
+
+Product.prototype.print = function () {
+    console.log(`${this.name}의 가격은 ${this.price}원입니다`)
+};
+
+let products = [
+    new Product('바나나',1200),
+    new Product('d',1200),
+    new Product('b',1200),
+    new Product('c',1200),
+];
+
+for (let product of products)
+{
+    product.print();
+}
+```
+
+
 >생성자 함수
 
 생성자 함수: 객체를 만드는 함수
@@ -23,7 +73,19 @@ function Prodcut(name,price)
     this.price = price;
 }
 ```
-이런식으로 제작된 함수는 new 키워드와 함께 사용해 객체를 생성한다
+이런식으로 제작된 함수는 new 키워드와 함께 사용해 객체를 생성한다  
+new 키워드를 사용하지 않고 선언하면 일반 함수가 호출되어 아무값도 리턴하지 않으므로 변수에 아무 값도 들어가지 않는다. 
+
+```js
+function Product(name, price) {
+    this.name = name;
+    this.price = price;
+}
+
+let product = new Product("ㅎㅎ",1200);
+
+console.log(product);
+```
 
 
 ## [04월 27일]

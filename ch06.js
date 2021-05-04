@@ -34,11 +34,43 @@
 //     printProdcut(foo);
 // }
 
+// function Product(name, price) {
+//     this.name = name;
+//     this.price = price;   
+// }
+
+// let product = new Product("호에엥",1200);
+
+// console.log(product);
+
+
+// function Product(name, price) {
+//     this.name = name;
+//     this.price = price;
+// }
+
+// let product = new Product("ㅎㅎ",1200);
+
+// console.log(product);
+
+
 function Product(name, price) {
     this.name = name;
-    this.price = price;   
+    this.price = price;
 }
 
-let product = new Product("호에엥",1200);
+Product.prototype.print = function () {
+    console.log(`${this.name}의 가격은 ${this.price}원입니다`)
+};
 
-console.log(product);
+let products = [
+    new Product('바나나',1200),
+    new Product('d',1200),
+    new Product('b',1200),
+    new Product('c',1200),
+];
+
+for (let product of products)
+{
+    product.print();
+}
