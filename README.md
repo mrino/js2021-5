@@ -9,6 +9,23 @@ git push: 푸쉬한다.
 >>노드가 없으면 그냥 html에서 실행하면 된다.
 * * *
 
+## [05월 04일]
+
+>배운 내용  
+
+>생성자 함수
+
+생성자 함수: 객체를 만드는 함수
+```js
+function Prodcut(name,price)
+{
+    this.name = name;
+    this.price = price;
+}
+```
+이런식으로 제작된 함수는 new 키워드와 함께 사용해 객체를 생성한다
+
+
 ## [04월 27일]
 
 >배운 내용  
