@@ -112,20 +112,38 @@
 // console.log(ho);
 // console.log(ho.sort());
 
-let foo = [23, 232, 124, 234, 43];
+// let foo = [23, 232, 124, 234, 43];
 
-foo.forEach((item, index) => {
-    console.log(`${index}번째 요스는 ${item}입니다`)
-});
+// foo.forEach((item, index) => {
+//     console.log(`${index}번째 요스는 ${item}입니다`)
+// });
 
-let bar = foo.map((item, index) => {
-    return item + item;
-});
+// let bar = foo.map((item, index) => {
+//     return item + item;
+// });
 
-console.log(bar);
+// console.log(bar);
 
-let lol = foo.filter((item, index) => {
-    return item % 2 == 0;
-});
+// let lol = foo.filter((item, index) => {
+//     return item % 2 == 0;
+// });
 
-console.log(lol);
+// console.log(lol);
+
+const _ = require("underscore");
+
+const ho = [{
+        name: "고구마",
+        price: 1200
+    },
+    {
+        name: "감자",
+        price: 500
+    },
+    {
+        name: "바나나",
+        price: 800
+    }];
+
+const foo = _.sortBy(ho, (item) => item.price);
+console.log(foo);
