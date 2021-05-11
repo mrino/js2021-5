@@ -55,31 +55,77 @@
 
 // re start
 
-let foo = [10,11,12,13,14,15]
-let bar = [1,4,2,3,5];
+// let foo = [10,11,12,13,14,15]
+// let bar = [1,4,2,3,5];
 
-console.log("원본")
-console.log(bar);
-//psuh
-bar.push(6);
-console.log("\n push");
-console.log(bar);
-//pop
-bar.pop()
-console.log("\n pop");
-console.log(bar);
-//shift
-console.log("\n shift");
-bar.shift();
-console.log(bar);
-//concat
-console.log("\n concat");
-let Rog = bar.concat(foo);
-console.log(Rog);
-//reverse
-console.log("\n reverse");
-console.log(bar.reverse());
-//sort
-console.log("\n sort");
-console.log(bar.sort());
+// console.log("원본")
+// console.log(bar);
+// //psuh
+// bar.push(6);
+// console.log("\n push");
+// console.log(bar);
+// //pop
+// bar.pop()
+// console.log("\n pop");
+// console.log(bar);
+// //shift
+// console.log("\n shift");
+// bar.shift();
+// console.log(bar);
+// //concat
+// console.log("\n concat");
+// let Rog = bar.concat(foo);
+// console.log(Rog);
+// //reverse
+// console.log("\n reverse");
+// console.log(bar.reverse());
+// //sort
+// console.log("\n sort");
+// console.log(bar.sort());
 
+// let ho = [{
+//         name: "고구마",
+//         price: 1200
+//     },
+//     {
+//         name: "감자",
+//         price: 500
+//     },
+//     {
+//         name: "바나나",
+//         price: 800
+//     }];
+
+// let pop = ho.pop();
+
+// console.log(pop);
+// console.log(ho);
+
+// ho.push({
+//     name: "호엥",
+//     price: 3000
+// },
+// {
+//     name: "호d엥",
+//     price: 300000000
+// });
+// console.log(ho);
+// console.log(ho.sort());
+
+let foo = [23, 232, 124, 234, 43];
+
+foo.forEach((item, index) => {
+    console.log(`${index}번째 요스는 ${item}입니다`)
+});
+
+let bar = foo.map((item, index) => {
+    return item + item;
+});
+
+console.log(bar);
+
+let lol = foo.filter((item, index) => {
+    return item % 2 == 0;
+});
+
+console.log(lol);
