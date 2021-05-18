@@ -11,7 +11,63 @@ git push: 푸쉬한다.
 >>노드가 없으면 그냥 html에서 실행하면 된다.
 * * *
 
-## [05월 10일]
+## [05월 18일]
+
+>배운 내용 
+
+>동기식과 비동기식
+
+동기식으로 하면 모든 파일을 실행하기전에는 프로그램이 실행되지 않지만  
+비동기식으로 하면 병렬적으로 파일을 읽어 들이므로 파일 하나를 읽어 들이는데   
+2초씩 걸린다 하더라도 전체 처리는 2초밖에 걸리지 않는다.
+동기식은 
+```js
+const file = fs.readFileSync("EEE.txt");//1
+console.log(file);//2
+console.log(file.toString());//3
+//4 프로그램 종료
+```
+1->2->3->4->5식으로 작동하지만
+
+비동기식은
+```js
+const file = fs.readFileSync("EEE.txt");//1
+
+fs.readFile("EEE.txt", (error, file) => { //2
+    console.log(file, file.toString());//4
+    //5코드 종료
+});
+//3 코드 종료
+```
+1->2->3->4->5 이런식으로 작동한다
+
+>모듈 관련
+
+node.js에서 모듈을 가져올때는
+```js
+const foo = require("dd");
+```
+이런 식으로 가져온다.  
+os와 url, File System(fs) 관련된 메서드는 ch09.js에서 확인 바람
+
+>process 객체와 이벤트
+
+node.js에서 이벤트를 연결하기 위해서는 이런 식으로 사용한다.  
+```js
+pricess.on('이벤트 이름', () => {});
+```
+또한 process 객체의 이벤트의 종류
+exit: 프로세스가 종류될 때 발생한다.  
+uncaughtException: 예외가 일어날 때 발생한다. 
+
+또한 관련된 내용은 <a href="https://nodejs.org/en/docs/">Nodejs</a>에서 확인바람
+
+>node 전역 변수
+
+__filename: 현재 실행중인 파일 경로  
+__dirname: 현재 실행중인 폴더 경로
+
+## [05월 11일]
 
 >배운 내용 
 
