@@ -40,12 +40,31 @@
 // fs.writeFileSync("text.txt", "ㅎㅎㅎㅎ");
 
 
-const fs = require("fs");
+// const fs = require("fs");
 
-fs.readFile("none.txt", (error, file) => {
-    if(error){
-        console.log("오류임");
-    } else {
-        console.log(file.toString());
-    }
-})
+// fs.readFile("none.txt", (error, file) => {
+//     if(error){
+//         console.log("오류임");
+//     } else {
+//         console.log(file.toString());
+//     }
+// })
+
+// const request = require("request");
+
+// const url = "https://namu.wiki/";
+// request(url, (error, response, body) => {
+//     console.log(body);
+// });
+
+const request = require("request");
+const cheerio = require("cheerio");
+
+
+const url = "http://ncov.mohw.go.kr/";
+
+request(url, (error, response, body) => {
+  const bo = cheerio.load(body);
+  console.log(bo("span.num").text());
+});
+
