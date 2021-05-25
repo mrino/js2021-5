@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <title>ㅎㅎㅎ</title>
+    <script src="./node_modules/underscore/underscore-umd-min.js"></script>
+    <script>
+        let ho = [{
+            "name": "고구마",
+            "price": 1200
+        },
+        {
+            "name": "감자",
+            "price": 500
+        },
+        {
+            "name": "바나나",
+            "price": 800
+        }];
+        const bar = _.sortBy(ho, (item) => item.price);
+        console.log(bar);
+        const foobar = _(ho).sortBy((item) => item.name);
+        console.log(foobar);
+    </script>
+</head>
+<body>
+    <p>ddddd</p>
+    <a href="ssss.html">연결표</a>    
+</body>
+</html>
