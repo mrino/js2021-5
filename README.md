@@ -1,6 +1,6 @@
 # 신동주 202030420 
 
-><a herf="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects#%EA%B0%92_%EC%86%8D%EC%84%B1">모질라</a> 참고하면 좋은 곳
+> [모질라]<https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects#%EA%B0%92_%EC%86%8D%EC%84%B1> 참고하면 좋은 곳
 
 >git 관련 명령어 
 >>git init: git을 생성한다.  
